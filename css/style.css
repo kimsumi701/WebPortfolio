@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* 모바일 */
+#wrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    max-width: 420px;
+    margin: 0 auto;
+}
+/* 페이지 로고 */
+.login-area h1 a{
+    display: block;
+    width: 70%;
+    height: 50%;
+    margin: 10% auto;
+    padding: 1em 0;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: inherit;
+} 
+/* 로그인 영역 */
+.login-area form{
+    width: 100%;
+    height: 200px;
+}
+/* 아이디 비번 입력 */
+.login-area .input-area input {
+    display: block;
+    width: 60%;
+    margin: 5% auto;
+    padding: 0.6em;
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    text-indent: 10px;
+}
+/* 로그인 버튼 */
+.login-area .login-button {
+    display: block;
+    width: 50%;
+    margin: 10% auto;
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+    background-color: #111;
+    color: #fff;
+}
+/*찾기 또는 회원가입 버튼 */
+.login-area .search-area{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 30px;
+    margin: 10% auto;
+}
+/* 소셜 로그인 버튼 */
+.login-area .social-login button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 40px;
+    margin: 5% auto;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/* 소셜 로그인 버튼 이미지 */
+.login-area .social-login .social .social-image{
+    width: 8%;
+    height: 20px;
+    margin: 0 10px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+}
+/* 구글 로그인 배경색 */
+.login-area .social-login .google{
+    background-color: orange;
+}
+/* 네이버 로그인 배경색 */
+.login-area .social-login .naver{
+    background-color: chartreuse;
+}
+/* 카카오 로그인 배경색 */
+.login-area .social-login .kakao{
+    background-color: yellow;
+}
+/* 구글 이미지 */
+.login-area .social-login .google .social-image{
+    background-image: url('https://mblogthumb-phinf.pstatic.net/MjAxNzA3MTJfMjQ1/MDAxNDk5ODYzMDU3MjU0.ZkiNLFOy5L1OLLmcQknBL9rBDExUS3eQ27cxrDni4Ewg.yO8w9yrCzmLsp1EXcf9eDbHO914vKBG_3pP7CNQas-Mg.PNG.krazymouse/%EA%B5%AC%EA%B8%80.png?type=w800');
+}
+/* 네이버 이미지 */
+.login-area .social-login .naver .social-image{
+    background-image: url('https://play-lh.googleusercontent.com/Kbu0747Cx3rpzHcSbtM1zDriGFG74zVbtkPmVnOKpmLCS59l7IuKD5M3MKbaq_nEaZM');
+}
+/* 카카오 이미지 */
+.login-area .social-login .kakao .social-image{
+    background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/5f9c58c2017800001.png');
+}
+/* 테블릿 */
+@media (min-width: 768px) {
+    #wrap {
+        max-width: 1024px;
+        font-size: 1.5rem;
+    }
+    /* 페이지 로고 */
+    .login-area h1 a{
+        padding: 1em;
+        font-size: 5rem;
+    }
+    /* 로그인 영역 */
+    .login-area form{
+        width: 100%;
+        height: 200px;
+    }
+    /* 아이디 비밀번호 입력창 */
+    .login-area .input-area input{
+        width: 50%;
+        height: 30px;
+        margin: 3% auto;
+        font-size: 1.5rem;
+        text-indent: 20px;
+    }
+    /* 로그인 버튼 */
+    .login-area .login-button{
+        width: 40%;
+        height: 60px;
+        line-height: 10px;
+        margin: 5% auto;
+        font-size: 1.5rem;
+    }
+    /* 소셜 로그인 버튼 */
+    .login-area .social-login .social{
+        height: 70px;
+        font-size: 1.5rem;
+    }
+    /* 소셜 로그인 버튼 이미지 */
+    .login-area .social-login .social  .social-image{
+        width: 7%;
+        height: 35px;
+    }
+}
+/* PC */
+@media (min-width: 1024px) {
+    #wrap {
+        max-width: 1920px;
+    }
+    .login-area h1 a{
+        width: 500px;
+        height: 100px;
+        margin: 50px auto 100px auto;
+        padding: 0;
+        font-size: 6rem;
+        letter-spacing: 1rem;
+    }
+    .login-area .input-area input{
+        width: 450px;
+        height: 50px;
+        padding: 0;
+        margin: 35px auto;
+        border-radius: 0;
+        font-size: 1rem;
+    }
+    .login-area .login-button{
+        width: 200px;
+        padding: 0;
+        font-size: 20px;
+        margin-top: 0;
+    }
+    .login-area  .search-area{
+        width: 500px;
+        margin: 80px auto 50px auto;
+    }
+    .login-area .social-login{
+        width: 500px;
+        height: 20px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .login-area .social-login .social{
+        font-size: 18px;
+    }
+    .login-area .social-login .social .social-image{
+        width: 30px;
+        height: 30px;
+    }
+}

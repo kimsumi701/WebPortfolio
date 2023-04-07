@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>로그인</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div id="wrap">
+            <section class="login-area">
+                <h1><a href="/home">Handy</a></h1>
+                <form action="/login" method="post">
+                    <div class="input-area">
+                        <input type="text" name="id" placeholder="아이디"/>
+                        <input type="password" name="password" placeholder="비밀번호"/>
+                    </div>
+                    <button type="submit" class="login-button">로그인</button>
+                </form>
+                <div class="search-area">
+                    <a href="">아이디 찾기</a>
+                    <a href="">비밀번호 찾기</a>
+                    <a href="">회원가입</a>
+                </div>
+                <div class="social-login">
+                    <button class="google social">
+                        <span class="social-image">image</span>
+                        <span>구글 아이디로 로그인하기</span>
+                    </button>
+                    <button class="naver social">
+                        <span class="social-image">image</span>
+                        <span >네이버 아이디로 로그인하기</span>
+                    </button>
+                    <button class="kakao social">
+                        <span class="social-image">image</span>
+                        <span>카카오 아이디로 로그인하기</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
